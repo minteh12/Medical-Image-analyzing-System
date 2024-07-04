@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Patients</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <span class="nav-home"><a href="\home">Home</a></span>
+            <span class="nav-contact"><a href="\contact">Contact</a></span>
+            <span class="nav-about"><a href="\about">About</a></span>
+        </ul>
+    </nav>
+    <div class="download">
+    <a href="{% url 'download_patients_with_images' %}" download>Download</a>
+    </div>
+    <div class="container">
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Medical Image</th>
+                    <th>Name</th>
+                    <th>ID</th>
+                    <th>Date</th>
+                    <th>Detection Type</th>
+                    <th>Image Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for patient in patients %}
+                    <tr>
+                        <td><img src="{{ patient.medical_image.url }}" alt="Medical Image" onclick="openImageModal('{{ patient.medical_image.url }}')"></td>
+                        <td>{{ patient.name }}</td>
+                        <td>{{ patient.patient_id }}</td>
+                        <td>{{ patient.date }}</td>
+                        <td>{{ patient.type }}</td>
+                        <td>{{ patient.result }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function openImageModal(imageUrl) {
+            var modal = document.createElement('div');
+            modal.className = 'modal';
+            var modalImg = document.createElement('img');
+            modalImg.src = imageUrl;
+            modalImg.alt = 'Medical Image';
+            modalImg.className = 'modal-content';
+            modal.appendChild(modalImg);
+            document.body.appendChild(modal);
+
+            modal.onclick = function() {
+                modal.remove();
+            };
+        }
+    </script>
+</body>
+</html>

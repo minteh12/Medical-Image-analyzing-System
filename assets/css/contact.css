@@ -1,0 +1,206 @@
+/* Reset some default styles */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  
+:root {
+    --main-color: #6ccff6;
+    --white-color: #fffffc;
+    --black-color: #021418;
+    /*------- Font and typography -------*/
+    --biggest-font-size: 1.25rem;
+    --h1-font-size: 3rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 0.713rem;
+    --tiny-font-size: 0.625rem;
+  }
+  @media screen and (min-width: 1900px) {
+    :root {
+      --h1-font-size: 3.2rem;
+      --h4-font-size: 2rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 1rem;
+      --tiny-font-size: 0.688rem;
+    }
+  }
+
+
+/* Set a background color for the body */
+body {
+    background: var(--white-color);
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+/* Style the header */
+
+
+/* Style the contact-info section */
+.contact-info {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgb(224, 210, 210);
+    padding: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Style the heading and paragraph inside the contact-info section */
+.contact-info h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Style the unordered list inside the contact-info section */
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style list items inside the unordered list */
+.contact-info li {
+    margin-bottom: 15px;
+}
+
+/* Style icons */
+.contact-info span {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #007bff;
+}
+
+/* Style links inside list items */
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Change link color on hover */
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Additional styles from main.css */
+section {
+    background-color: rgb(224, 208, 208);
+    padding: 150px;
+    box-shadow: 0 0 10px rgba(43, 2, 2, 0.1);
+    border: 2px solid #810d0d;
+    border-radius: 8px;
+}
+
+.nav-home, .nav-about, .nav-contact {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 5px 15px;
+    border: 1px solid #e9e2e2;
+    border-radius: 5px;
+  }
+  
+  .nav-home a, .nav-about a, .nav-contact a {
+    color: rgb(255, 255, 255);
+  }
+  
+
+  span {
+    color: var(--main-color);
+    font-weight: 800;
+  }
+
+ul {
+    margin: 10px 0;
+    font-size: var(--normal-font-size);
+    list-style-type: none;
+  }
+
+.header {
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/dark-cover.png");
+    color: var(--white-color);
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../images/dark-cover.png"); /* Check this path */
+    color: var(--white-color);
+}
+button {
+    padding: 1rem;
+    font-weight: 600;
+    font-size: var(--h4-font-size);
+    color: var(--white-color);
+    background: var(--main-color);
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+
+
+
+span {
+  color: var(--main-color);
+  font-weight: 800;
+}
+
+h1 {
+  font-weight: 800;
+  margin: 4vh 2vw;
+  font-size: var(--h1-font-size);
+}
+
+p {
+  font-weight: 400;
+  margin: 1vh auto;
+  font-size: var(--normal-font-size);
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+button {
+  padding: 1rem;
+  font-weight: 600;
+  font-size: var(--h4-font-size);
+  color: var(--white-color);
+  background: var(--main-color);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+nav {
+    background-image: url("../images/head.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+    display: flex;
+    
+  }

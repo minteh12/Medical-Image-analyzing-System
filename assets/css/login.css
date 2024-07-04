@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f4f4f4;
+    background: url("../images/head4.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 400px;
+    background: rgba(100, 101, 107, 0.9);
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(9px);
+    color: #ffffff;
+    padding: 30px 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1),
+                0px 5px 15px rgba(0, 0, 0, 0.1),
+                0px 18px 36px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: center;
+}
+
+.wrapper h1 {
+    margin-bottom: 15px;
+    font-size: 2em;
+    font-weight: 500;
+    position: relative;
+}
+
+.wrapper h1::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #F37A65, #D64141);
+}
+
+.intro {
+    margin-bottom: 25px;
+    font-size: 1.2em;
+    color: #f3f4f6;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: #b2b8bd;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    font-size: 16px;
+    color: #333;
+    padding: 0 20px;
+}
+
+.input-box input::placeholder {
+    color: #333;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.remember-forgot label input {
+    accent-color: #000;
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    color: #f6f8fa;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    background: linear-gradient(to right, #F37A65, #D64141);
+    border-radius: 25px;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #D64141, #F37A65);
+}
+
+@media screen and (max-width: 420px) {
+    .wrapper {
+        width: 90%;
+        padding: 20px;
+    }
+}
+.error-message {
+  background: #ffdddd;
+  border-left: 6px solid #f44336;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: #a94442;
+  border-radius: 5px;
+  text-align: left;
+}

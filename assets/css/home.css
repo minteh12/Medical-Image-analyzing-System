@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background: url("../images/head4.jpg")
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 60vh;
+    /*background: url("../images/head.jpg") no-repeat center center/cover;*/
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); /* Dark background for better text visibility */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+}
+
+.vertical-nav {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/head.jpg");
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.vertical-nav span {
+    margin: 10px 0;
+}
+
+.vertical-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.vertical-nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    margin-left: 50px; /* Adjust based on the width of the vertical nav */
+    padding: 20px;
+}
+
+.info-section {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(207, 61, 61, 0.1);
+}
+
+.info-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.info-section p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-image: url("../images/dark-cover.png");
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 2.5vh;
+    
+}
+.nav-home, .nav-about, .nav-contact, .nav-logout, .nav-brain , .nav-lungdisease , .nav-lungcancer {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 5px 15px;
+    border: 1px solid #e9e2e2;
+    border-radius: 5px;
+    text-decoration: none;
+}
+  
+  .nav-home a, .nav-about a, .nav-contact a, .nav-logout a, .nav-view a, .nav-add{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+nav {
+    background-image: url("../images/head.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 10vh;
+    text-decoration: none;
+    display: flex;
+    
+}
+.nav-logout  {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px; /* Increased padding for better look */
+    border: none; /* Removed border */
+    border-radius: 25px; /* Rounded edges */
+    text-decoration: none;
+    background: linear-gradient(135deg, #cf5d1b, #8D58BF); /* Gradient background */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    
+}
+.nav-view,.nav-add {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px; /* Increased padding for better look */
+    border: none; /* Removed border */
+    border-radius: 25px; /* Rounded edges */
+    text-decoration: none;
+    background: linear-gradient(135deg, #6D5BBA, #8D58BF); /* Gradient background */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    text-align: center;
+    
+}
+
+.nav-logout a:hover {
+    background: linear-gradient(135deg, #7fe60b, #6D5BBA); /* Reversed gradient on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.nav-view a:hover {
+    background: linear-gradient(135deg, #e22c14, #6D5BBA); /* Reversed gradient on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+.nav-add a:hover {
+    background: linear-gradient(135deg, #e22c14, #6D5BBA); /* Reversed gradient on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
