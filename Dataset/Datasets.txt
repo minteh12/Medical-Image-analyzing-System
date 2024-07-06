@@ -1,0 +1,3 @@
+Lung cancer dataset link (https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images)
+Lung Disease dataset link (https://www.kaggle.com/datasets/samuel156/lungxrays-grayscale)
+Brain stroke dataset link (https://www.kaggle.com/datasets/afridirahman/brain-stroke-ct-image-dataset)
